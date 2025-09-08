@@ -45,3 +45,6 @@ Tu vas créer une **infrastructure avec 4 parties** :
 - Connaître les bases de Docker (commandes, images, conteneurs).
 
 ---
+FROM ubuntu:latest       ← couche 1
+RUN apt-get update -y    ← couche 2
+CMD ["echo", "Hello, World!"]  ← couche 3
